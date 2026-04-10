@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Stylish Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        button {
+            background: #2575fc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello 👋</h1>
+        <p>This is a cool styled web page</p>
+
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I love designing and creating things.</p>
+        </div>
+
+        <div class="card">
+            <h2>Skills</h2>
+            <p>HTML | CSS | Creativity</p>
+        </div>
+
+        <button onclick="showMessage()">Click Me</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Welcome to my webpage 😄");
+        }
+    </script>
+
+</body>
+</html>
