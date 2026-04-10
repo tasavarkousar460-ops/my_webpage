@@ -1,68 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Stylish Page</title>
+    <title>Tasavar Designs</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: white;
-            text-align: center;
             margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #111;
+            color: #fff;
         }
 
-        .container {
-            padding: 50px;
+        header {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(45deg, #ff4e50, #f9d423);
+            color: black;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
         }
 
         .card {
-            background: white;
-            color: black;
-            padding: 20px;
-            margin: 20px auto;
-            width: 300px;
+            background: #222;
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            overflow: hidden;
+            transition: transform 0.3s;
         }
 
-        button {
-            background: #2575fc;
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff4e50;
             color: white;
-            border: none;
             padding: 10px 20px;
-            border-radius: 10px;
-            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 10px;
         }
 
-        button:hover {
-            background: #6a11cb;
+        .btn:hover {
+            background: #f9d423;
+            color: black;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #000;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Hello 👋</h1>
-        <p>This is a cool styled web page</p>
+    <header>
+        <h1>Tasavar T-Shirt Designs 👕</h1>
+        <p>Creative | Trendy | Unique</p>
+    </header>
 
-        <div class="card">
-            <h2>About Me</h2>
-            <p>I love designing and creating things.</p>
+    <section>
+        <h2>My Collection</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Design 1">
+                <h3>Street Style</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Design 2">
+                <h3>Minimal Art</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Design 3">
+                <h3>Typography Tee</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Design 4">
+                <h3>Graphic Print</h3>
+            </div>
+
         </div>
 
-        <div class="card">
-            <h2>Skills</h2>
-            <p>HTML | CSS | Creativity</p>
-        </div>
+        <!-- LINKS -->
+        <a href="https://instagram.com/yourusername" target="_blank" class="btn">Instagram</a>
+        
+        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn">WhatsApp Order</a>
 
-        <button onclick="showMessage()">Click Me</button>
-    </div>
+    </section>
 
-    <script>
-        function showMessage() {
-            alert("Welcome to my webpage 😄");
-        }
-    </script>
+    <footer>
+        <p>© 2026 Tasavar Designs | Follow for more 🔥</p>
+    </footer>
 
 </body>
 </html>
